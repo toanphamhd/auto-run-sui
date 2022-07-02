@@ -1,0 +1,7 @@
+########################
+1. Enable service
+systemctl daemon-reload && systemctl enable sui-fullnode.service
+2. Start Sui FullNode
+systemctl start sui-fullnode.service
+3. Check log
+journalctl -u sui-fullnode.service -f -o cat
